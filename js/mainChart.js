@@ -22,7 +22,7 @@ let perc5 =  percentage(rejs, total)
 const myChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['Plástico (' + plas + ' Kg)', 'Metal (' + metal + ' Kg)', 'Vidro (' + vidro + ' Kg)', 'Orgânicos (' + orgs + ' Kg)', 'Rejeitos (' + rejs + ' Kg)'],
+    labels: ['Plástico (' + plas + ' Kg)', 'Metais (' + metal + ' Kg)', 'Vidro (' + vidro + ' Kg)', 'Orgânicos (' + orgs + ' Kg)', 'Rejeitos (' + rejs + ' Kg)'],
     datasets: [{
       label: 'Parcela do total (em %)',
       data: [perc1, perc2, perc3, perc4, perc5],
