@@ -1,6 +1,6 @@
 <div align="center">
-    <h1>Bento</h1>
-    <b>🍱 A Clean and Simple Startpage</b>
+    <h1>Amazon Reuse</h1>
+    <b>Lorem Ipsum</b>
 </div>
 
 <p align="center">
