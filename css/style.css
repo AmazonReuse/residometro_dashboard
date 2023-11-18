@@ -1,0 +1,417 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"); */
+
+/*@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&display=swap');
+
+/* V A R I A B L E S */
+
+:root {
+  /* Fonts  */
+  --fsg: 135px; /* Time and Greetings */
+  --fsm: 75px; /* Date */
+  --fss: 50px; /* Greetings and Weather widger */
+  --fses: 16px; /* Links List */
+
+  /* Light theme  */
+  --accent: #CF8D61; /* Hover color */
+/*  --bg: #f5f5f5;  Background color */
+  --bg: #F0E6CE; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --tp: rgba(0, 0, 0, 0); 
+  --sfg: #3a3a3a; /* Sceondary Foreground color */
+
+  /* Image background  */
+
+  /* Uncoment this section to get the
+    image wallpaper. You can also
+    change the --imgcol value
+    to make the filter to your own */
+
+/*  --imgbg: url(/HomeScreen/img/andromeda.jpg);*/
+
+  --imgcol: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ); /* Filter color */
+}
+
+/* Dark theme  */
+.darktheme {
+  --accent: #86502B; /* Hover color */
+/*  --bg: #19171a;  Background color */
+  --bg: rgb(10 19 3); /* Background color */
+  --sbg: #201e21; /* Cards color */
+  --fg: #d8dee9; /* Foreground color */
+  --tp: rgba(0, 0, 0, 0.0); 
+  --sfg: #3a3a3a; /* Secondary Foreground color */
+  --imgcol: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ); /* Filter color */
+}
+
+/* S T Y L E S */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+/*   font-family: "Open Sans", sans-serif; */
+/*   font-family: "VT323", sans-serif; */
+/*  font-family: "Share Tech Mono", sans-serif;*/
+  font-family: 'Antonio', sans-serif;
+  transition: 0.2s ease-in-out;
+}
+
+body {
+  width: 100vw;
+  /*height: 100vh;*/
+  padding-top: 100px;
+  background-color: var(--bg);
+  background-image: var(--imgcol), var(--imgbg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#themeButton {
+  position: absolute;
+  margin: 2em 2em 0 0;
+  right: 0;
+  top: 0;
+  color: var(--fg);
+  border: none;
+  cursor: pointer;
+  background-color: #00000000;
+  display: inline-flex;
+  align-items: center;
+}
+
+#themeButton__icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* #settingsButton {
+  position: absolute;
+  margin: 2em 2em 0 0;
+  right: 0;
+  top: 0;
+  color: var(--fg);
+  border: none;
+  cursor: pointer;
+  background-color: #00000000;
+}
+
+#settingsButton__icon {
+  width: 25px;
+  height: 25px;
+} */
+
+.container {
+  width: 150vh;
+  height: 150vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--tp);
+/*
+  background-color: var(--sbg);
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+*/
+}
+/*
+.card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+}
+*/
+
+.titleBlock {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.graphBlock {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnersBlock {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.partnersBlock__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--tp);
+}
+
+.partnersBlock__icon {
+  width: 53px;
+  height: 53px;
+  color: var(--fg);
+}
+
+.partnersBlock__link-1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+.partnersBlock__link-2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.partnersBlock__link-3 {
+  grid-row: 2;
+  grid-column: 1;
+}
+.partnersBlock__link-4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.partnersBlock__link-5 {
+  grid-row: 1;
+  grid-column: 3;
+}
+.partnersBlock__link-6 {
+  grid-row: 2;
+  grid-column: 3;
+}
+.partnersBlock__link:hover {
+  background-color: var(--accent);
+}
+/* .partnersBlock__link:hover svg {
+  stroke: var(--sfg);
+}*/
+
+.logoBlock {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.weatherBlock__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.weatherBlock__weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*#hour,
+#separator,
+#minutes {
+  font-size: var(--fsg);
+  font-weight: bolder;
+  color: var(--fg);
+}
+
+#month,
+#day {
+  font-size: var(--fsm);
+  font-weight: bold;
+  color: var(--fg);
+}
+
+#day {
+  margin-left: 20px;
+}*/
+
+#greetings {
+  font-size: var(--fss);
+  color: var(--fg);
+}
+
+/*.weather-icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.temperature-value p {
+  font-size: var(--fss);
+  font-weight: bolder;
+  margin-left: 15px;
+  color: var(--fg);
+}
+
+.temperature-description p {
+  font-size: var(--fss);
+  margin-left: 15px;
+  color: var(--fg);
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list__1 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+.list__2 {
+  grid-column: 4;
+  grid-row: 3 / span 2;
+}
+.list__head {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 30px;
+  color: var(--fg);
+  height: 30px;
+}
+.list__link {
+  text-decoration: none;
+  font-size: var(--fses);
+  color: var(--fg);
+  margin-top: 1px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.list__link:hover {
+  background-color: var(--accent);
+  color: var(--sfg);
+}*/
+
+
+/* M E D I A - Q U E R I E S */
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --fsg: 100px;
+    --fsm: 65px;
+    --fss: 20px;
+  }
+
+  .container {
+    grid-gap: 20px;
+    padding: 40px;
+  }
+
+  #themeButton {
+    position: absolute;
+    margin: 2em 2em 0 0;
+    right: 0;
+    top: 0;
+    color: var(--fg);
+    border: none;
+    cursor: pointer;
+    background-color: #00000000;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  #themeButton__icon {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+
+  .titleBlock {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .graphBlock {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 50px 20px;
+  }
+  
+  .partnersBlock {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .logoBlock {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  
+
+
+
+
+
+
+/*  #greetings {
+    font-size: var(--fss);
+  }
+
+  .list {
+    display: none;
+  }
+
+/*
+  .buttonLink {
+    grid-column: 1 / span 4;
+    grid-gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+*/
+}

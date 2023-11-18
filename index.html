@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Dashboard</title>
+    <link rel=" shortcut icon" type="image/png" href="icons/favicon.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body class="">
+    <button id="themeButton">
+      <i id="themeButton__icon" data-feather="moon"></i>
+    </button>
+    <!-- <button id="settingsButton">
+      <a href="about:preferences" target="__self">
+        <i id="settingsButton__icon" data-feather="settings"></i>
+      </a>
+    </button> -->
+
+    <div class="container">
+      <!-- Grafico principal  -->
+      
+      <div class="titleBlock">
+        <div class="chart">
+          <!-- <div id="greetings" class=""> -->
+           <img src="img/title.png" width="450px" alt="Residômetro">
+          
+        </div>
+      </div>  
+        
+
+      <div class="graphBlock">
+        <div class="chart">
+          <canvas width="600" id="myChart"></canvas>
+        </div>
+     
+      </div>
+
+      <div class="partnersBlock">
+        <p></p>         
+        <a
+          href="https://amazonreuse.com"
+          target="_self"
+          class="partnersBlock__link card partnersBlock__link-1"
+        >
+          <!--<i class="partnersBlock__icon" data-feather="github"></i> -->
+          <img src="img/logo_amazon_cor_completo2_500.png" width="130px" alt="">
+        </a>
+
+        <a
+          href="https://amazonreuse.com"
+          target="_self"
+          class="partnersBlock__link card partnersBlock__link-2"
+        >
+          <!--<i class="partnersBlock__icon" data-feather="github"></i> -->
+          <img src="img/logo_amazon_cor_completo2_500.png" width="130px" alt="">
+        </a>
+        <a
+          href="https://amazonreuse.com"
+          target="_self"
+          class="partnersBlock__link card partnersBlock__link-3"
+        >
+          <!--<i class="partnersBlock__icon" data-feather="github"></i> -->
+          <img src="img/logo_amazon_cor_completo2_500.png" width="130px" alt="">
+        </a>
+        <a
+          href="https://amazonreuse.com"
+          target="_self"
+          class="partnersBlock__link card partnersBlock__link-4"
+        >
+          <!--<i class="partnersBlock__icon" data-feather="github"></i> -->
+          <img src="img/logo_amazon_cor_completo2_500.png" width="130px" alt="">
+        </a>
+        <a
+          href="https://amazonreuse.com"
+          target="_self"
+          class="partnersBlock__link card partnersBlock__link-5"
+        >
+          <!--<i class="partnersBlock__icon" data-feather="github"></i> -->
+          <img src="img/logo_amazon_cor_completo2_500.png" width="130px" alt="">
+        </a>
+        <a
+          href="https://amazonreuse.com"
+          target="_self"
+          class="partnersBlock__link card partnersBlock__link-6"
+        >
+          <!--<i class="partnersBlock__icon" data-feather="github"></i> -->
+          <img src="img/logo_amazon_cor_completo2_500.png" width="130px" alt="">
+        </a>
+          
+      </div>
+
+
+      <div class="logoBlock">
+        <div class="chart">
+          <img src="img/logo_amazon_cor_completo2_500.png" width="300" alt="Amazon Reuse"> 
+        </div>
+      </div>
+
+      <!-- Date and Weather  -->
+
+<!--
+      <div class="weatherBlock">
+        <div class="weatherBlock__date">
+          <div id="month" class=""></div>
+          <div id="day" class=""></div>
+        </div>
+        <div class="weatherBlock__weather">
+          <div class="weather-icon">
+            <img src="icons/OneDark/unknown.png" />
+          </div>
+          <div class="temperature-value">
+            <p class="">- °<span class="g">c</span></p>
+          </div>
+          <div class="temperature-description">
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+-->
+
+
+      <!-- Lists  -->
+
+<!--
+      <div class="card list list__1">
+        <i class="list__head"></i>
+        <a
+          target="_self"
+          href="https://www.behance.net"
+          class="list__link"
+          >behance</a
+        ><a
+          target="_self"
+          href="https://www.reddit.com"
+          class="list__link"
+          >reddit</a
+        >
+        <a
+          target="_self"
+          href="https://www.tumblr.com/"
+          class="list__link"
+          >tumblr</a
+        >
+        <a
+          target="_self"
+          href="https://www.amazon.com.br"
+          class="list__link"
+          >amazon</a
+        ><a
+          target="_self"
+          href="https://www.netflix.com"
+          class="list__link"
+          >netflix</a
+        >
+      </div>
+-->
+
+<!--
+      <div class="card list list__2">
+        <i class="list__head" data-feather=""></i>
+        <a href="https://www.vox.com/" target="_self" class="list__link"
+          >vox</a
+        >
+        <a href="https://www.tor.com/" target="_self" class="list__link"
+          >tor</a
+        >
+        <a href="https://theconversation.com/us" target="_self" class="list__link"
+          >the conversation</a
+        >
+        <a href="https://www.brainpickings.org/" target="_self" class="list__link"
+          >brain pickings</a
+        >
+      </div>
+-->
+    </div>
+
+    <!-- Scrips  -->
+
+    <script src="js/time.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/mainChart.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+
+  <!-- Coded and designed by Miguel R. Ávila: https://github.com/MiguelRAvila -->
+</html>
