@@ -161,7 +161,7 @@ body {
   grid-row: 3 / span 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 30px;
   padding: 20px;
 }
@@ -180,28 +180,34 @@ body {
   color: var(--fg);
 }
 
-.partnersBlock__link-1 {
+.partnersBlock__title {
   grid-row: 1;
+  grid-column: 1 / span 2;
+  font-size: 45px;
+}
+
+.partnersBlock__link-1 {
+  grid-row: 2;
   grid-column: 1;
 }
 .partnersBlock__link-2 {
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 2;
 }
 .partnersBlock__link-3 {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1;
 }
 .partnersBlock__link-4 {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 2;
 }
 .partnersBlock__link-5 {
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 3;
 }
 .partnersBlock__link-6 {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 3;
 }
 .partnersBlock__link:hover {
@@ -257,10 +263,10 @@ body {
   margin-left: 20px;
 }*/
 
-#greetings {
+/*#greetings {
   font-size: var(--fss);
   color: var(--fg);
-}
+}*/
 
 /*.weather-icon img {
   width: 70px;
