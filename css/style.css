@@ -96,21 +96,21 @@ body {
   margin-left: 10px;
 }
 
-/* #settingsButton {
+.topLogo {
   position: absolute;
-  margin: 2em 2em 0 0;
-  right: 0;
-  top: 0;
+  margin: 1.3em 2em 0 0;
+  left:0;
+  top:0;
   color: var(--fg);
   border: none;
   cursor: pointer;
   background-color: #00000000;
 }
 
-#settingsButton__icon {
-  width: 25px;
-  height: 25px;
-} */
+.icon {
+  width: 100px;
+  margin-left: 10px;  
+}
 
 .container {
   width: 150vh;
