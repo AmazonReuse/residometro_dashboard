@@ -351,10 +351,6 @@ body {
   .titleBlock {
     grid-column: 1 / span 4;
     grid-row: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .titleBlock__img {
@@ -364,11 +360,6 @@ body {
   .graphBlock {
     grid-column: 1 / span 4;
     grid-row: 2 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px 50px 20px;
   }
 
   .canvas {
@@ -380,20 +371,11 @@ body {
     grid-row: 3 / span 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
   
   .logoBlock {
     grid-column: 1 / span 4;
     grid-row: 4 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 100px;
   }
 
@@ -405,10 +387,6 @@ body {
   .titleBlock {
     grid-column: 1 / span 4;
     grid-row: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .titleBlock__img {
@@ -418,11 +396,6 @@ body {
   .graphBlock {
     grid-column: 1 / span 4;
     grid-row: 2 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px 50px 20px;
   }
 
   .canvas {
@@ -434,20 +407,11 @@ body {
     grid-row: 3 / span 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-gap: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
   
   .logoBlock {
     grid-column: 1 / span 4;
     grid-row: 4 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 100px;
   }
 
@@ -472,31 +436,19 @@ body {
   .titleBlock {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
   }
   
   .graphBlock {
     grid-column: 3 / span 2;
     grid-row: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px 50px 20px;
   }
   
   .partnersBlock {
     grid-column: 1 / span 4;
     grid-row: 3 / span 1;
-    display: grid;
+display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 30px;
-    padding: 20px;
   }
 
   .partnersBlock__link-1 {
@@ -527,10 +479,6 @@ body {
   .logoBlock {
     grid-column: 1 / span 4;
     grid-row: 4 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .titleBlock__img {
@@ -549,31 +497,18 @@ body {
   .titleBlock {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
   }
   
   .graphBlock {
     grid-column: 3 / span 2;
     grid-row: 1 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px 50px 20px;
   }
   
   .partnersBlock {
     grid-column: 1 / span 4;
     grid-row: 2 / span 1;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 30px;
-    padding: 20px;
   }
 
   .partnersBlock__link-1 {
@@ -604,10 +539,6 @@ body {
   .logoBlock {
     grid-column: 1 / span 4;
     grid-row: 4 / span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .titleBlock__img {
