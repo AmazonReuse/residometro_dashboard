@@ -113,7 +113,7 @@ body {
 
 .container {
   width: 150vh;
-  height: 150vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -555,7 +555,7 @@ body {
   }
 
   .titleBlock__img {
-    width: 30vw;
+    width: 28vw;
   }
   
   .canvas {
