@@ -218,7 +218,7 @@ body {
 
 .logoBlock {
   grid-column: 3 / span 2;
-  grid-row: 3 / span 2;
+  grid-row: 3 / span 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,6 +319,20 @@ body {
   background-color: var(--accent);
   color: var(--sfg);
 }*/
+
+.detailsBlock {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageDetails_img {
+  width: 100px;
+    
+}
 
 
 /* M E D I A - Q U E R I E S */
@@ -537,7 +551,7 @@ body {
   
   .logoBlock {
     grid-column: 1 / span 4;
-    grid-row: 4 / span 1;
+    grid-row: 3 / span 1;
   }
 
   .titleBlock__img {
@@ -546,6 +560,21 @@ body {
   
   .canvas {
     width: 40vw;
+  }
+
+  .detailsBlock {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  
+  .pageDetails_img {
+    width: 100px;
+      
   }
   
 }
