@@ -93,12 +93,11 @@ body {
 #themeButton__icon {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
 }
 
 .topLogo {
   position: absolute;
-  margin: 1.3em 2em 0 0;
+  margin: 1.3em 2em 0 1.3em;
   left:0;
   top:0;
   color: var(--fg);
@@ -109,7 +108,7 @@ body {
 
 .icon {
   width: 100px;
-  margin-left: 10px;  
+    
 }
 
 .container {
