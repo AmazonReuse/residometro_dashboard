@@ -22,13 +22,16 @@ let perc5 =  percentage(rejs, total)
 const myChart = new Chart(ctx, {
   type: 'doughnut',
   data: {
-    labels: ['Plástico (' + plas + ' Kg)', 'Metais (' + metal + ' Kg)', 'Vidro (' + vidro + ' Kg)', 'Orgânicos (' + orgs + ' Kg)', 'Rejeitos (' + rejs + ' Kg)'],
+    //labels: ['Plástico (' + plas + ' Kg)', 'Metais (' + metal + ' Kg)', 'Vidro (' + vidro + ' Kg)', 'Orgânicos (' + orgs + ' Kg)', 'Rejeitos (' + rejs + ' Kg)'],
+    labels: ['Plástico (' + plas + ' Kg)', 'Vidro (' + vidro + ' Kg)'],
+ 
     datasets: [{
       label: 'Parcela do total (em %)',
-      data: [perc1, perc2, perc3, perc4, perc5],
+      //data: [perc1, perc2, perc3, perc4, perc5],
+      data: [perc1, perc3],
       backgroundColor: [
         'rgba(173, 38, 23, 1)',
-        'rgba(173, 151, 23, 1)',
+        //'rgba(173, 151, 23, 1)',
         'rgba(23, 173, 95, 1)',
         'rgba(88, 46, 41, 1)',
         'rgba(98, 112, 102, 1)'
