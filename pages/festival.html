@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Dashboard</title>
+    <link rel=" shortcut icon" type="image/png" href="icons/favicon.png" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body class="">
+    <button id="themeButton">
+      <i id="themeButton__icon" data-feather="moon"></i>
+    </button>
+
+    <div class="topLogo">
+      <a
+      href="https://amazonreuse.github.io/residometro_dashboard/"
+      target="_self"
+      class="partnersBlock__link card partnersBlock__link-1"
+      >
+        <img class="icon" src="../img/logos/reuse_redux.png" width="180px" alt="">
+      </a>
+    </div>
+
+    <div class="container">
+
+      <div class="titleBlock">
+        <div class="chart">
+          <!-- <div id="greetings" class=""> -->
+           <img src="../img/logos/festival.png" class="titleBlock__img" alt="Residômetro">
+          
+        </div>
+      </div>
+      
+
+      <div class="graphBlock">
+        <div class="chart">
+          <canvas class="canvas" id="myChart"></canvas>
+        </div>
+     
+      </div>
+    </div>
+
+    <script src="../js/chartTech.js"></script>
+    <script src="../js/theme.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+
+  <!-- Coded and designed by Miguel R. Ávila: https://github.com/MiguelRAvila -->
+</html>
