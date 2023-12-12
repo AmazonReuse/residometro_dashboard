@@ -335,6 +335,16 @@ body {
     
 }
 
+.redirectBlock {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+}
+
+.redirectBlock h1, .redirectBlock a {
+  color: #3a3a3a;
+  font-size: 30px;
+}
+
 
 /* M E D I A - Q U E R I E S */
 

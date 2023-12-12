@@ -34,12 +34,12 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-// Theme accordint the hour
+// Theme according to the hour
 
 /*
 const today = new Date();
 
-if (hour >= 19 || hour < 5) {
+if (hour >= 19 || hour < 6) {
     enableDark();
 } else {
     disableDark();
