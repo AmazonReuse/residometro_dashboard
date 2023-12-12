@@ -156,6 +156,36 @@ body {
   justify-content: center;
 }
 
+.titleBlockFest1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.titleBlockFest2 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.graphBlockFest {
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
 .partnersBlock {
   grid-column: 1 / span 2;
   grid-row: 3 / span 2;
@@ -386,6 +416,19 @@ body {
     grid-row: 2 / span 1;
   }
 
+  .titleBlockFest1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;  }
+
+  .titleBlockFest2 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;  }
+  
+  .graphBlockFest {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
+
   .canvas {
     width: 100vw;
   }
@@ -422,6 +465,19 @@ body {
     grid-row: 2 / span 1;
   }
 
+  .titleBlockFest1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;  }
+
+  .titleBlockFest2 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;  }
+  
+  .graphBlockFest {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
+
   .canvas {
     width: 100vw;
   }
@@ -446,6 +502,19 @@ body {
 
   .titleBlock__img {
     width: 60vw;
+  }
+
+  .titleBlockFest1 {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;  }
+
+  .titleBlockFest2 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;  }
+  
+  .graphBlockFest {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
   }
   
   .canvas {
@@ -508,6 +577,22 @@ body {
   .titleBlock__img {
     width: 35vw;
   }
+
+  .titleBlockFest1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  
+  .titleBlockFest2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1; 
+  }
+  
+  .graphBlockFest {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
+  
   
   .canvas {
     width: 50vw;
@@ -568,6 +653,22 @@ body {
   .titleBlock__img {
     width: 28vw;
   }
+
+  .titleBlockFest1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
+  
+  .titleBlockFest2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1; 
+  }
+  
+  .graphBlockFest {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+  }
+  
   
   .canvas {
     width: 40vw;
