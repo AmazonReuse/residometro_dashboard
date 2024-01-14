@@ -19,11 +19,11 @@ const disableDark = () => {
 };
 
 //Toggle theme
-if (darkTheme === "enabled") {
-  enableDark();
-} else {
-  disableDark();
-}
+//if (darkTheme === "enabled") {
+  //enableDark();
+//} else {
+  //disableDark();
+//}
 
 themeToggle.addEventListener("click", () => {
   darkTheme = localStorage.getItem("darkTheme");
@@ -34,14 +34,15 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-// Theme according to the hour
+// Toggle + Theme according to the hour
 
 let today = new Date();
 let hours = today.getHours(); 
 
 if (hours >= 19 || hours < 6) {
     enableDark();
-} else {
+  } else if (darkTheme==='enabled') {
+    enableDark();
+  } else {
     disableDark();
-}
-
+  }
